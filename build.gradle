@@ -10,7 +10,8 @@ plugins {
 }
 
 repositories {
-
+	//for ipn
+	mavenCentral()
 	maven {
 		name = "Modmuss50"
 		url = "https://maven.modmuss50.me/"
@@ -32,7 +33,16 @@ repositories {
 			includeGroup "io.github.onyxstudios.Cardinal-Components-API"
 		}
 	}
+	//for mod menu
+	maven {
+		name = "TerraformersMC"
+		url = "https://maven.terraformersmc.com/"
+		content {
+			includeGroup "com.terraformersmc"
+		}
+	}
 }
+
 
 sourceCompatibility = JavaVersion.VERSION_16
 targetCompatibility = JavaVersion.VERSION_16
@@ -71,6 +81,7 @@ dependencies {
 	include 'teamreborn:energy:0.1.1'
 
 	optionalDependency "me.shedaniel:RoughlyEnoughItems-fabric:6.0.264-alpha"
+	optionalDependency "org.anti-ad.mc:inventory-profiles-next:fabric-1.17.1-1.1.0"
 
 }
 

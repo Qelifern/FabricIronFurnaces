@@ -15,8 +15,9 @@ import net.minecraft.screen.*;
 import net.minecraft.screen.slot.Slot;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import org.anti_ad.mc.ipn.api.IPNIgnore;
 
-
+@IPNIgnore
 public abstract class BlockIronFurnaceScreenHandlerBase extends AbstractRecipeScreenHandler<Inventory> {
 
     private final Inventory inventory;

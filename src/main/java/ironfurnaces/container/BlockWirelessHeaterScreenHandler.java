@@ -12,8 +12,9 @@ import net.minecraft.screen.ScreenHandlerListener;
 import net.minecraft.screen.slot.Slot;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import org.anti_ad.mc.ipn.api.IPNIgnore;
 
-
+@IPNIgnore
 public class BlockWirelessHeaterScreenHandler extends ScreenHandler {
 
     private final Inventory inventory;

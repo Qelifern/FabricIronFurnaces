@@ -25,11 +25,13 @@ import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import org.anti_ad.mc.ipn.api.IPNIgnore;
 import org.lwjgl.glfw.GLFW;
 
 import java.util.List;
 import java.util.Optional;
 
+@IPNIgnore
 public abstract class BlockIronFurnaceScreenBase<T extends BlockIronFurnaceScreenHandlerBase> extends HandledScreen<T> {
 
     public static Identifier GUI;

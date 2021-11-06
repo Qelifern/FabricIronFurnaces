@@ -17,9 +17,11 @@ import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import org.anti_ad.mc.ipn.api.IPNIgnore;
 
 import java.util.Optional;
 
+@IPNIgnore
 public class BlockWirelessHeaterScreen extends HandledScreen<BlockWirelessHeaterScreenHandler> {
 
     public static Identifier GUI = new Identifier(Reference.MOD_ID + ":" + "textures/gui/heater.png");
